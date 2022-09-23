@@ -1,0 +1,173 @@
+/* ОСНОВНІ СТИЛІ */
+
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color:#2196F3;
+    --fond-color:#FFFFFF;
+    --secondary-fond-color:#2F303A;
+    --buttons-fond-color:#F5F4FA; /*застосовується на бекгроунд Наша команда*/
+    --contacts-color:rgba(255, 255, 255, 0.6);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:var(--primary-text-color);
+    background-color:var(--fond-color);
+    position: relative;
+    width: 1600px;
+    height: 2346px;
+}
+
+
+.logo{
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+
+/* СТИЛІ ДЛЯ СТУДІЯ */
+
+
+/* Navigation */
+.link{
+    text-decoration: none;
+}
+.site-nav .link{
+    color:var(--title-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:var(--accent-color);
+}
+
+.site-nav .link.current{
+    color:var(--accent-color);
+}
+
+.contacts-nav .link {
+    color:var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-nav .link:hover,
+.contacts-nav .link:focus{
+    color:var(--accent-color);
+}
+
+/* Hero */
+.hero{}
+.hero-title{
+    color:var(--secondary-fond-color);
+    font-family: 'Roboto';
+    font-style: 400;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,37;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero .button.secondary{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,9;
+    letter-spacing: 0.06em;
+}
+
+
+/* Main Section */
+.section-title{
+    font-family: 'Roboto';
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--title-text-color);
+}
+
+.featur-title {
+    color: var(--title-text-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature-text {
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,7px;
+    letter-spacing: 0.03em;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,9;
+    letter-spacing: 0.03em
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+/* projects list */
+
+.page-footer{
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-fond-color);
+}
+/* СТИЛІ ДЛЯ ПОРТФОЛІО */
+/* Main content */
+/* Feature */
+.feature-list .title{}
+
+.button{
+    color:var(--title-text-color);
+    background-color:var(--fond-color);
+    font-family: inherit;
+}
+
+.button.primary{
+    color:var(--title-text-color);
+    background-color:var(--buttons-fond-color);
+    border-color: transparent;
+}
+
+.button.secondary{
+    color:var(--fond-color);
+    background-color:var(--accent-color);
+    border-color: transparent;
+}
