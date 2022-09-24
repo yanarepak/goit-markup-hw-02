@@ -1,5 +1,4 @@
 /* ОСНОВНІ СТИЛІ */
-
 :root{
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -9,7 +8,6 @@
     --buttons-fond-color:#F5F4FA; /*застосовується на бекгроунд Наша команда*/
     --contacts-color:rgba(255, 255, 255, 0.6);
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     color:var(--primary-text-color);
@@ -18,156 +16,137 @@ body{
     width: 1600px;
     height: 2346px;
 }
-
-
 .logo{
-    color: var(--accent-color);
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-
+.web{
+    color: var(--accent-color);
+}
 .list{
     list-style: none;
 }
-
-
 /* СТИЛІ ДЛЯ СТУДІЯ */
-
-
-/* Navigation */
-.link{
-    text-decoration: none;
-}
+/* Навігаці */
 .site-nav .link{
     color:var(--title-text-color);
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus{
     color:var(--accent-color);
 }
-
 .site-nav .link.current{
     color:var(--accent-color);
 }
-
 .contacts-nav .link {
     color:var(--primary-text-color);
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
-
 .contacts-nav .link:hover,
 .contacts-nav .link:focus{
     color:var(--accent-color);
 }
-
-/* Hero */
+/* Герой */
 .hero{}
-.hero-title{
+.hero .title{
     color:var(--secondary-fond-color);
-    font-family: 'Roboto';
     font-style: 400;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,37;
+    line-height: 1.37;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-
 .hero .button.secondary{
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,9;
+    line-height: 1.9;
     letter-spacing: 0.06em;
 }
-
-
-/* Main Section */
+/* Головна секція */
 .section-title{
-    font-family: 'Roboto';
+    color: var(--title-text-color);
     font-size: 36px;
-    line-height: 1,17;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color:var(--title-text-color);
 }
-
-.featur-title {
+.featurs.list .title {
     color: var(--title-text-color);
-    font-family: 'Roboto';
-    font-weight: 700;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
-.feature-text {
-    color: var(--primary-text-color);
-    font-family: 'Roboto';
-    font-weight: 400;
+.featurs.list .text {
     font-size: 14px;
-    line-height: 1,7px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
-
-.title{
-    font-family: 'Roboto';
+.team.list .title{
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,9;
+    line-height: 1.9;
     letter-spacing: 0.03em
 }
-
-.text{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.team.list .text{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
-}
-
-/* projects list */
-
-.page-footer{
-    letter-spacing: 0.03em;
-    background-color: var(--secondary-fond-color);
 }
 /* СТИЛІ ДЛЯ ПОРТФОЛІО */
-/* Main content */
-/* Feature */
-.feature-list .title{}
-
+/* Кнопки */
 .button{
     color:var(--title-text-color);
     background-color:var(--fond-color);
     font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
-
 .button.primary{
     color:var(--title-text-color);
     background-color:var(--buttons-fond-color);
     border-color: transparent;
 }
-
 .button.secondary{
     color:var(--fond-color);
     background-color:var(--accent-color);
     border-color: transparent;
+}
+/* Список проектів */
+.projects-title{
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects-text{
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+/* Футер */
+.page-footer {
+    letter-spacing: 0.03em;
 }
