@@ -7,6 +7,7 @@
     --secondary-fond-color:#2F303A;
     --buttons-fond-color:#F5F4FA; /*застосовується на бекгроунд Наша команда*/
     --contacts-color:rgba(255, 255, 255, 0.6);
+    --header-logo-color:#000000;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -17,7 +18,7 @@ body{
     height: 2346px;
 }
 .logo{
-    color: #000000;
+    color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -26,8 +27,8 @@ body{
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-.web{
-    color: var(--accent-color);
+.page-header .wrap{
+    color: var(--header-logo-color);
 }
 .list{
     list-style: none;
@@ -49,6 +50,16 @@ body{
 .site-nav .link.current{
     color:var(--accent-color);
 }
+.contacts-nav{
+    font-style:normal;
+}
+.contacts-nav.list .address{
+    color: var(--fond-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
 .contacts-nav .link {
     color:var(--primary-text-color);
     font-weight: 500;
@@ -62,9 +73,11 @@ body{
     color:var(--accent-color);
 }
 /* Герой */
-.hero{}
+.hero{
+    background-color: var(--secondary-fond-color);
+}
 .hero .title{
-    color:var(--secondary-fond-color);
+    color:var(--fond-color);
     font-style: 400;
     font-weight: 900;
     font-size: 44px;
@@ -115,7 +128,7 @@ body{
 /* Кнопки */
 .button{
     color:var(--title-text-color);
-    background-color:var(--fond-color);
+    background-color:var(--buttons-fond-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -123,16 +136,20 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border-color: transparent;
+}
+.button:hover,
+.button:focus{
+   color: var(--fond-color);
+   background-color: var(--accent-color);
 }
 .button.primary{
-    color:var(--title-text-color);
-    background-color:var(--buttons-fond-color);
-    border-color: transparent;
-}
-.button.secondary{
-    color:var(--fond-color);
+    color: var(--fond-color);
     background-color:var(--accent-color);
-    border-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
 }
 /* Список проектів */
 .projects-title{
@@ -148,5 +165,17 @@ body{
 }
 /* Футер */
 .page-footer {
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-fond-color);
+}
+.page-footer .wrap{
+    color: var(--fond-color);
+}
+.link.mail,
+.link.tel{
+    color: var(--contacts-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
